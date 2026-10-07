@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web - Ramiro</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="activo" href="index.html">Inicio</a>
+        <a href="quien-soy.html">¿Quién soy?</a>
+        <a href="mis-datos.html">Mis datos</a>
+        <a href="pasatiempos.html">Pasatiempos</a>
+        <a href="favoritos.html">Páginas favoritas</a>
+    </nav>
+
+    <main class="contenedor">
+        <section class="intro">
+            <h1><span id="Titulo">Mi página web - <span style="color: black;">Ramiro</span></span></h1>
+
+            <p>Hola! Esta es <b><span style="color: yellow;">mi página web</span></b>, totalmente realizada con el motivo <span style="color: yellow;">importantísimo</span> de no jalar en el curso de <mark><b>Arquitectura de entornos web</b></mark> :D</p>
+
+            <img src="img/hola.gif" alt="Hola">
+            <p style="color: rgba(255, 0, 0, 0.25);">(no tengo ninguna foto mía útil para este trabajo...)</p>
+
+            <p>Soy un estudiante de SISE, desde el mes de Mayo. En el momento que escribo esto, estoy a una semana de culminar con mi segundo ciclo.</p>
+
+            <div class="NubeContenedora">
+                <img src="img/box.gif" alt="Nube">
+                <p id="Nube">¿Creen que seré un <b>buen</b> informático?<br><button>Si</button> <button>No</button></p>
+            </div>
+
+            <p>¡Usa la barra de navegación para visitar cada parte de la página!</p>
+        </section>
+
+        <section class="formulario">
+            <h2>Envíame un mensaje</h2>
+            <p style="color: #00FF00;">Leeria todo pero esta interacción es falsa...</p>
+            <form action="" method="POST">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" required><br>
+                <label for="comentario">Comentario:</label><br>
+                <textarea id="comentario" name="comentario" rows="5" placeholder="Escriba su comentario" required></textarea><br>
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <marquee behavior="scroll" direction="right" scrollamount="50">
+            <p style="color: white;">&copy;2026 Ramiro Baca &copy;2026 Ramiro Baca &copy;2026 Ramiro Baca</p>
+        </marquee>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

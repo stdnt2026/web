@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-attachment: fixed;
+    background-image: url(img/sun.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    margin: 0 0 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    margin: 0 25px 20px;
+    line-height: 1.6;
+}
+
+#Titulo{
+    background-image: linear-gradient(to right, black, white);
+    padding: 5px 15px;
+}
+
+/* Barra de navegación */
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 20px;
+    background-color: rgba(0, 0, 0, 0.92);
+    border-bottom: 2px solid #00ff00;
+    box-shadow: 0 3px 12px rgba(0, 255, 0, 0.35);
+}
+
+.navbar a{
+    color: #00ff00;
+    text-decoration: none;
+    padding: 10px 14px;
+    border: 1px solid transparent;
+    transition: 0.25s;
+}
+
+.navbar a:hover,
+.navbar a.activo{
+    color: black;
+    background-color: #00ff00;
+    border-color: #00ff00;
+    transform: translateY(-2px);
+}
+
+.contenedor{
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.seccion{
+    padding: 70px 0;
+    min-height: 60vh;
+}
+
+.TextoPartes{
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.intro{
+    text-align: center;
+    padding: 70px 0 40px;
+}
+
+.intro p{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.NubeContenedora{
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 650px;
+    margin: 50px auto;
+}
+
+.NubeContenedora img{
+    width: min(450px, 100%);
+    height: auto;
+}
+
+#Nube{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    color: #00FF00;
+    margin: 0;
+}
+
+#Nube button,
+form button{
+    font-family: inherit;
+    cursor: pointer;
+    padding: 8px 18px;
+    margin: 5px;
+    border: 1px solid #00ff00;
+    background: black;
+    color: #00ff00;
+}
+
+#Nube button:hover,
+form button:hover{
+    background: #00ff00;
+    color: black;
+}
+
+#Partes{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #00ff00;
+    transition: 0.25s;
+}
+
+#Partes:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0,255,0,.4);
+}
+
+#Partes ol{
+    list-style-position: inside;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#Partes li{
+    margin: 15px 0;
+}
+
+#Partes a,
+a{
+    text-decoration: none;
+    color: #00aaff;
+    display: inline-block;
+}
+
+a:hover{
+    color: #00ff00;
+}
+
+#ImageLeft{
+    float: left;
+    width: min(350px, 45%);
+    height: auto;
+    margin: 0 25px 15px 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px green;
+    color: black;
+}
+
+th{
+    background-color: green;
+    color: white;
+    padding: 15px;
+}
+
+th:first-child{
+    border-top-left-radius: 10px;
+}
+
+th:last-child{
+    border-top-right-radius: 10px;
+}
+
+th, td{
+    border: 2px solid lightgreen;
+    padding: 12px;
+    text-align: center;
+}
+
+tr, td{
+    background-color: white;
+}
+
+td:first-child{
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+.lista-pasatiempos{
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 2;
+}
+
+.favorito{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 25px 0;
+    padding: 15px;
+    border: 1px solid rgba(0,255,0,.5);
+    transition: .25s;
+}
+
+.favorito:hover{
+    transform: translateX(8px);
+    box-shadow: 0 0 12px rgba(0,255,0,.3);
+}
+
+.favorito img{
+    width: 80px;
+    height: auto;
+}
+
+.favorito span{
+    color: white;
+    font-size: 18px;
+}
+
+.formulario{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.formulario label{
+    color: #00ff00;
+}
+
+.formulario input,
+.formulario textarea{
+    width: min(500px, 90%);
+    padding: 10px;
+    margin: 8px 0 15px;
+    font-family: inherit;
+}
+
+.pie{
+    text-align: center;
+    padding: 25px 10px 45px;
+    overflow: hidden;
+}
+
+.pie img{
+    max-width: 100%;
+}
+
+.pie marquee{
+    margin-top: 20px;
+}
+
+@media (max-width: 700px){
+    h1{ font-size: 34px; }
+    h2{ font-size: 30px; }
+    p{ font-size: 17px; }
+
+    .navbar{
+        position: relative;
+        padding: 10px;
+    }
+
+    .navbar a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .seccion{ padding: 45px 0; }
+
+    .TextoPartes{ font-size: 18px; }
+
+    #ImageLeft{
+        float: none;
+        display: block;
+        width: min(350px, 100%);
+        margin: 0 auto 20px;
+    }
+
+    .favorito{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table{
+        font-size: 13px;
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+.entrada { animation: aparecer 0.8s ease; } @keyframes aparecer { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
